@@ -45,6 +45,10 @@ SilverStripe\Security\Member:
     Email: "user"
     Password: "user"
 
+Dynamic\Elements\Gallery\Elements\ElementPhotoGallery:
+  one:
+    Title: "Gallery One"
+
 Dynamic\Elements\Gallery\Model\GalleryImage:
   one:
     Title: "Image One"

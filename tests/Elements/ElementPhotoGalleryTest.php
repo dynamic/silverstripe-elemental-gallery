@@ -13,12 +13,16 @@ use SilverStripe\Forms\FieldList;
 class ElementPhotoGalleryTest extends SapphireTest
 {
     /**
+     * @var string
+     */
+    protected static $fixture_file = '../fixtures.yml';
+
+    /**
      *
      */
     public function testGetCMSFields()
     {
-        $object = Injector::inst()->create(ElementPhotoGallery::class);
-        $object->write();
+        $object = $this->objFromFixture(ElementPhotoGallery::class, 'one');
         $fields = $object->getCMSFields();
         $this->assertInstanceOf(FieldList::class, $fields);
     }
@@ -28,7 +32,7 @@ class ElementPhotoGalleryTest extends SapphireTest
      */
     public function testGetType()
     {
-        $object = Injector::inst()->create(ElementPhotoGallery::class);
+        $object = $this->objFromFixture(ElementPhotoGallery::class, 'one');
         $this->assertEquals($object->getType(), 'Photo Gallery');
     }
 }
