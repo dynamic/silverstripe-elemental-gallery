@@ -1,0 +1,50 @@
+SilverStripe\Security\Group:
+  administrators:
+    Title: "Administrators"
+  site-owners:
+    Title: "Site Owners"
+
+SilverStripe\Security\Permission:
+  administrators:
+    Code: ADMIN
+    Type: 1
+    Group: =>SilverStripe\Security\Group.administrators
+  cms-access:
+    Code: CMS_ACCESS
+    Type: 1
+    Group: =>SilverStripe\Security\Group.site-owners
+  sitetree-view:
+    Code: SITETREE_VIEW_ALL
+    Type: 1
+    Group: =>SilverStripe\Security\Group.site-owners
+  sitetree-edit:
+    Code: SITETREE_EDIT_ALL
+    Type: 1
+    Group: =>SilverStripe\Security\Group.site-owners
+  cms-pages:
+    Code: CMS_ACCESS_CMSMain
+    Type: 1
+    Group: =>SilverStripe\Security\Group.site-owners
+
+SilverStripe\Security\Member:
+  admin:
+    FirstName: "Default"
+    Surname: "Admin"
+    Email: "defaultadmin"
+    Password: "dev"
+    Groups: =>SilverStripe\Security\Group.administrators
+  site-owner:
+    FirstName: "Site"
+    Surname: "Owner"
+    Email: "owner"
+    Password: "owner"
+    Groups: =>SilverStripe\Security\Group.site-owners
+  default:
+    FirstName: "Default"
+    Surname: "Member"
+    Email: "user"
+    Password: "user"
+
+Dynamic\Elements\Gallery\Model\GalleryImage:
+  one:
+    Title: "Image One"
