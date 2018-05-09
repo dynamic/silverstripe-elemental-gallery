@@ -1,7 +1,5 @@
 # Silverstripe Elemental Gallery
 
-A block to display a collection of images
-
 [![Build Status](https://travis-ci.org/dynamic/silverstripe-elemental-gallery.svg?branch=master)](https://travis-ci.org/dynamic/silverstripe-elemental-gallery)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-gallery/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-gallery/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-gallery/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-gallery/?branch=master)
@@ -24,24 +22,26 @@ A block to display a collection of images
 
 ## Example usage
 
-Photo Gallery Element block allows you to display a collection of images. Click on the image thumbnail to 
-open a larger version in Lightbox.
+Photo Gallery Element block allows you to display a collection of images. Click on the image thumbnail to open a larger version in Lightbox.
+
+## Screen Shots
+
+#### Front End sample of a Gallery Element
+![Front End sample of a Gallery Element](./readme-images/gallery-block-sample.jpg)
+
+#### Front End sample of a Gallery Element - Lightbox
+![Front End sample of a Gallery Element](./readme-images/gallery-block-sample-lightbox.jpg)
+
+#### CMS - Gallery Main Tab
+![CMS - Gallery Main Tab](./readme-images/gallery-block-cms.jpg)
+
+#### CMS - Gallery - Add/Edit Gallery Image
+![CMS - Gallery Main Tab](./readme-images/gallery-block-cms-add-image.jpg)
+
 
 ## Getting more elements
 
-Other elemental modules by Dynamic:
-
-* SilverStripe Elemental Blocks
-	* [Packagist](https://packagist.org/packages/dynamic/silverstripe-elemental-blocks)
-	* [GitHub](https://github.com/dynamic/silverstripe-elemental-blocks)
-* [SilverStripe Elemental Accordion](https://github.com/dynamic/silverstripe-elemental-accordion)  
-* [SilverStripe Elemental Blog](https://github.com/dynamic/silverstripe-elemental-blog)
-* [SilverStripe Elemental Countdown](https://github.com/dynamic/silverstripe-elemental-countdown)
-* [SilverStripe Elemental Customer Service](https://github.com/dynamic/silverstripe-elemental-customer-service)
-* [SilverStripe Elemental Flexslider](https://github.com/dynamic/silverstripe-elemental-flexslider)  
-* [Silverstripe Elemental oEmbed](https://github.com/dynamic/silverstripe-elemental-oembed)
-* [SilverStripe Elemental Sponsors](https://github.com/dynamic/silverstripe-elemental-sponsors)  
-* [SilverStripe Elemental Testimonials](https://github.com/dynamic/silverstripe-elemental-testimonials)  
+See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#getting-more-elements)
 
 ## Configuration
 
