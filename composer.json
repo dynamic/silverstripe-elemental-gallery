@@ -16,7 +16,7 @@
     "require": {
         "dnadesign/silverstripe-elemental": "^2@dev",
         "dynamic/silverstripe-elemental-baseobject": "^1@dev",
-        "silverstripe/recipe-cms": "^1.0@dev",
+        "silverstripe/recipe-cms": "^1.0@dev || ^4.0@dev",
         "silverstripe/vendor-plugin": "^1.0@dev"
     },
     "require-dev": {
