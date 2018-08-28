@@ -58,7 +58,7 @@ class GalleryImageTest extends SapphireTest
         $this->assertTrue($object->canEdit($siteowner));
 
         $member = $this->objFromFixture(Member::class, 'default');
-        $this->assertNull($object->canEdit($member));
+        $this->assertFalse($object->canEdit($member));
     }
 
     /**
@@ -75,7 +75,7 @@ class GalleryImageTest extends SapphireTest
         $this->assertTrue($object->canDelete($siteowner));
 
         $member = $this->objFromFixture(Member::class, 'default');
-        $this->assertNull($object->canDelete($member));
+        $this->assertFalse($object->canDelete($member));
     }
 
     /**
@@ -92,6 +92,6 @@ class GalleryImageTest extends SapphireTest
         $this->assertTrue($object->canCreate($siteowner));
 
         $member = $this->objFromFixture(Member::class, 'default');
-        $this->assertNull($object->canCreate($member));
+        $this->assertFalse($object->canCreate($member));
     }
 }
