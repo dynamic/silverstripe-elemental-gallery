@@ -9,6 +9,7 @@ use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldAddExistingAutocompleter;
 use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
 use SilverStripe\Forms\GridField\GridFieldDeleteAction;
+use SilverStripe\ORM\FieldType\DBField;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
 /**
@@ -19,7 +20,7 @@ class ElementPhotoGallery extends BaseElement
     /**
      * @var string
      */
-    private static $icon = 'gallery-icon';
+    private static $icon = 'font-icon-p-gallery';
 
     /**
      * @return string
@@ -44,6 +45,15 @@ class ElementPhotoGallery extends BaseElement
     );
 
     /**
+     * Set to false to prevent an in-line edit form from showing in an elemental area. Instead the element will be
+     * clickable and a GridFieldDetailForm will be used.
+     *
+     * @config
+     * @var bool
+     */
+    private static $inline_editable = false;
+
+    /**
      * @return FieldList
      */
     public function getCMSFields()
@@ -62,6 +72,29 @@ class ElementPhotoGallery extends BaseElement
         }
 
         return $fields;
+    }
+
+    /**
+     * @return DBHTMLText
+     */
+    public function getSummary()
+    {
+        if ($this->Images()->count() == 1) {
+            $label = ' image';
+        } else {
+            $label = ' images';
+        }
+        return DBField::create_field('HTMLText', $this->Images()->count() . ' ' . $label)->Summary(20);
+    }
+
+    /**
+     * @return array
+     */
+    protected function provideBlockSchema()
+    {
+        $blockSchema = parent::provideBlockSchema();
+        $blockSchema['content'] = $this->getSummary();
+        return $blockSchema;
     }
 
     /**
