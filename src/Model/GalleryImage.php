@@ -64,6 +64,11 @@ class GalleryImage extends BaseElementObject
     /**
      * @var string
      */
+    private static $default_sort = 'SortOrder';
+
+    /**
+     * @var string
+     */
     private static $table_name = 'GalleryImage';
 
     /**
