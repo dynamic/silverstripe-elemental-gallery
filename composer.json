@@ -15,12 +15,14 @@
     "license": "BSD-3-Clause",
     "require": {
         "dnadesign/silverstripe-elemental": "^4.0",
-        "dynamic/silverstripe-elemental-baseobject": "^2.0",
-        "silverstripe/vendor-plugin": "^1.0"
+        "dynamic/silverstripe-elemental-baseobject": "^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
         "squizlabs/php_codesniffer": "*"
+    },
+    "suggest": {
+        "colymba/gridfield-bulk-editing-tools": "Bulk upload images to a gallery."
     },
     "config": {
         "process-timeout": 600

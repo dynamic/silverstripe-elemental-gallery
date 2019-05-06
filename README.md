@@ -13,8 +13,12 @@
 
 ## Requirements
 
-* silverstripe/recipe-cms: ^4@dev
-* dnadesign/silverstripe-elemental: ^4@dev
+* dnadesign/silverstripe-elemental: ^4.0
+* dynamic/silverstripe-elemental-baseobject: ^2.0
+
+#### Optional
+
+* colymba/gridfield-bulk-editing-tools ^3.0
 
 ## Installation
 

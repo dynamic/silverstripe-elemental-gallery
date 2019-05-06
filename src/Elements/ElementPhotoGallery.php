@@ -2,6 +2,7 @@
 
 namespace Dynamic\Elements\Gallery\Elements;
 
+use Colymba\BulkUpload\BulkUploader;
 use DNADesign\Elemental\Models\BaseElement;
 use Dynamic\Elements\Gallery\Model\GalleryImage;
 use SilverStripe\Forms\FieldList;
@@ -45,6 +46,13 @@ class ElementPhotoGallery extends BaseElement
     );
 
     /**
+     * @var array
+     */
+    private static $owns = [
+        'Images',
+    ];
+
+    /**
      * Set to false to prevent an in-line edit form from showing in an elemental area. Instead the element will be
      * clickable and a GridFieldDetailForm will be used.
      *
@@ -59,16 +67,24 @@ class ElementPhotoGallery extends BaseElement
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
-        $fields->removeByName([
-            'Images',
-        ]);
+
         if ($this->ID) {
-            $config = GridFieldConfig_RecordEditor::create();
-            $config->addComponent(new GridFieldOrderableRows('SortOrder'));
-            $config->removeComponentsByType(GridFieldAddExistingAutocompleter::class);
-            $config->removeComponentsByType(GridFieldDeleteAction::class);
-            $imagesField = GridField::create('Images', 'Images', $this->Images()->sort('SortOrder'), $config);
-            $fields->addFieldToTab('Root.Main', $imagesField);
+            $field = $fields->dataFieldByName('Images');
+            $fields->removeByName('Images');
+
+            $config = $field->getConfig();
+            $config
+                ->addComponents([
+                    new GridFieldOrderableRows('SortOrder')
+                ])
+                ->removeComponentsByType([
+                    GridFieldAddExistingAutocompleter::class,
+                    GridFieldDeleteAction::class
+                ]);
+            if (class_exists(BulkUploader::class)) {
+                $config->addComponent(new BulkUploader());
+            }
+            $fields->addFieldToTab('Root.Main', $field);
         }
 
         return $fields;

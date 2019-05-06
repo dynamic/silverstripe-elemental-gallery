@@ -1,0 +1,14 @@
+en:
+  Dynamic\Elements\Gallery\Elements\ElementPhotoGallery:
+    BlockType: 'Photo Gallery'
+    PLURALNAME: 'Photo Gallery Elements'
+    PLURALS:
+      one: 'A Photo Gallery Element'
+      other: '{count} Photo Gallery Elements'
+    SINGULARNAME: 'Photo Gallery Element'
+  Dynamic\Elements\Gallery\Model\GalleryImage:
+    PLURALNAME: 'Gallery Images'
+    PLURALS:
+      one: 'A Gallery Image'
+      other: '{count} Gallery Images'
+    SINGULARNAME: 'Gallery Image'
