@@ -1,6 +1,14 @@
 # Change Log
 
-## [2.0.2](https://github.com/dynamic/silverstripe-elemental-gallery/tree/2.0.2) (2019-03-20)
+## [2.0.3](https://github.com/dynamic/silverstripe-elemental-gallery/tree/2.0.3) (2019-05-06)
+[Full Changelog](https://github.com/dynamic/silverstripe-elemental-gallery/compare/2.0.2...2.0.3)
+
+**Merged pull requests:**
+
+- initial i18n support, bulk uploader [\#14](https://github.com/dynamic/silverstripe-elemental-gallery/pull/14) ([jsirish](https://github.com/jsirish))
+- Update third-party Lightbox to 2.11 [\#13](https://github.com/dynamic/silverstripe-elemental-gallery/pull/13) ([Juanitou](https://github.com/Juanitou))
+
+## [2.0.2](https://github.com/dynamic/silverstripe-elemental-gallery/tree/2.0.2) (2019-03-21)
 [Full Changelog](https://github.com/dynamic/silverstripe-elemental-gallery/compare/2.0.1...2.0.2)
 
 **Closed issues:**
