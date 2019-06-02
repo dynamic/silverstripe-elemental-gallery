@@ -51,6 +51,7 @@ class GalleryImage extends BaseElementObject
     private static $summary_fields = array(
         'Image.CMSThumbnail' => 'Image',
         'Title' => 'Title',
+        'Summary' => 'Summary',
     );
 
     /**
@@ -107,5 +108,13 @@ class GalleryImage extends BaseElementObject
         }
 
         return $page;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSummary()
+    {
+        return $this->dbObject('Content')->Summary(20);
     }
 }
