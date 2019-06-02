@@ -41,6 +41,13 @@ class ElementPhotoGallery extends BaseElement
     /**
      * @var array
      */
+    private static $db = [
+        'Content' => 'HTMLText',
+    ];
+
+    /**
+     * @var array
+     */
     private static $has_many = array(
         'Images' => GalleryImage::class,
     );
@@ -66,26 +73,31 @@ class ElementPhotoGallery extends BaseElement
      */
     public function getCMSFields()
     {
-        $fields = parent::getCMSFields();
+        $this->beforeUpdateCMSFields(function (FieldList $fields) {
+            $fields->dataFieldByName('Content')
+                ->setRows(5);
 
-        if ($this->ID) {
-            $field = $fields->dataFieldByName('Images');
-            $fields->removeByName('Images');
+            if ($this->ID) {
+                $field = $fields->dataFieldByName('Images');
+                $fields->removeByName('Images');
 
-            $config = $field->getConfig();
-            $config
-                ->addComponents([
-                    new GridFieldOrderableRows('SortOrder')
-                ])
-                ->removeComponentsByType([
-                    GridFieldAddExistingAutocompleter::class,
-                    GridFieldDeleteAction::class
-                ]);
-            if (class_exists(BulkUploader::class)) {
-                $config->addComponent(new BulkUploader());
+                $config = $field->getConfig();
+                $config
+                    ->addComponents([
+                        new GridFieldOrderableRows('SortOrder')
+                    ])
+                    ->removeComponentsByType([
+                        GridFieldAddExistingAutocompleter::class,
+                        GridFieldDeleteAction::class
+                    ]);
+                if (class_exists(BulkUploader::class)) {
+                    $config->addComponent(new BulkUploader());
+                }
+                $fields->addFieldToTab('Root.Main', $field);
             }
-            $fields->addFieldToTab('Root.Main', $field);
-        }
+        });
+
+        $fields = parent::getCMSFields();
 
         return $fields;
     }
