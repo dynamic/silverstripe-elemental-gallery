@@ -1,6 +1,8 @@
 en:
   Dynamic\Elements\Gallery\Elements\ElementPhotoGallery:
     BlockType: 'Photo Gallery'
+    ContentLabel: 'Intro'
+    ImagesLabel: 'Images'
     PLURALNAME: 'Photo Gallery Elements'
     PLURALS:
       one: 'A Photo Gallery Element'
