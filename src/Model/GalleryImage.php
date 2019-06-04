@@ -49,8 +49,6 @@ class GalleryImage extends BaseElementObject
      * @var array
      */
     private static $summary_fields = array(
-        'Image.CMSThumbnail' => 'Image',
-        'Title' => 'Title',
         'Summary' => 'Summary',
     );
 
