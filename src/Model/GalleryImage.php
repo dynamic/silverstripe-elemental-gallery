@@ -95,22 +95,6 @@ class GalleryImage extends BaseElementObject
     }
 
     /**
-     * @return null
-     */
-    public function getPage()
-    {
-        $page = null;
-
-        if ($this->PhotoGallery()) {
-            if ($this->PhotoGallery()->hasMethod('getPage')) {
-                $page = $this->PhotoGallery()->getPage();
-            }
-        }
-
-        return $page;
-    }
-
-    /**
      * @return mixed
      */
     public function getSummary()
