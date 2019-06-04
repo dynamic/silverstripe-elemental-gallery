@@ -102,6 +102,8 @@ class ElementPhotoGallery extends BaseElement
                     ]);
                 if (class_exists(BulkUploader::class)) {
                     $config->addComponent(new BulkUploader());
+                    $config->getComponentByType(BulkUploader::class)
+                        ->setUfSetup('setFolderName', 'Uploads/Elements/PhotoGallery/');
                 }
                 $fields->addFieldToTab('Root.Main', $field);
             }
