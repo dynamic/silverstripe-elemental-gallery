@@ -1,5 +1,31 @@
 # Change Log
 
+## [2.0.4](https://github.com/dynamic/silverstripe-elemental-gallery/tree/2.0.4) (2019-06-04)
+[Full Changelog](https://github.com/dynamic/silverstripe-elemental-gallery/compare/2.0.3...2.0.4)
+
+**Implemented enhancements:**
+
+- adjust image alt tags to use $Image.Title [\#3](https://github.com/dynamic/silverstripe-elemental-gallery/issues/3)
+
+**Fixed bugs:**
+
+- BulkUploader - set folder name [\#21](https://github.com/dynamic/silverstripe-elemental-gallery/issues/21)
+- adjust image alt tags to use $Image.Title [\#3](https://github.com/dynamic/silverstripe-elemental-gallery/issues/3)
+
+**Closed issues:**
+
+- GalleryImage - remove getPage\(\) method [\#4](https://github.com/dynamic/silverstripe-elemental-gallery/issues/4)
+
+**Merged pull requests:**
+
+- GalleryImage - setFolderName when using bulkloader [\#22](https://github.com/dynamic/silverstripe-elemental-gallery/pull/22) ([jsirish](https://github.com/jsirish))
+- GalleryImage - remove getPage\(\) [\#20](https://github.com/dynamic/silverstripe-elemental-gallery/pull/20) ([jsirish](https://github.com/jsirish))
+- ElementPhotoGallery.ss - update to `$Image.Title` [\#19](https://github.com/dynamic/silverstripe-elemental-gallery/pull/19) ([jsirish](https://github.com/jsirish))
+- i18n adjustments [\#18](https://github.com/dynamic/silverstripe-elemental-gallery/pull/18) ([jsirish](https://github.com/jsirish))
+- update docs and guidelines [\#17](https://github.com/dynamic/silverstripe-elemental-gallery/pull/17) ([jsirish](https://github.com/jsirish))
+- CI - new travis, scrutinizer, jenkinsfile [\#16](https://github.com/dynamic/silverstripe-elemental-gallery/pull/16) ([jsirish](https://github.com/jsirish))
+- cms design [\#15](https://github.com/dynamic/silverstripe-elemental-gallery/pull/15) ([jsirish](https://github.com/jsirish))
+
 ## [2.0.3](https://github.com/dynamic/silverstripe-elemental-gallery/tree/2.0.3) (2019-05-06)
 [Full Changelog](https://github.com/dynamic/silverstripe-elemental-gallery/compare/2.0.2...2.0.3)
 
