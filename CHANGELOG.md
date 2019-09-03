@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.5](https://github.com/dynamic/silverstripe-elemental-gallery/tree/2.0.5) (2019-09-03)
+[Full Changelog](https://github.com/dynamic/silverstripe-elemental-gallery/compare/2.0.4...2.0.5)
+
+**Merged pull requests:**
+
+- Fixing image file path [\#23](https://github.com/dynamic/silverstripe-elemental-gallery/pull/23) ([3Dgoo](https://github.com/3Dgoo))
+
 ## [2.0.4](https://github.com/dynamic/silverstripe-elemental-gallery/tree/2.0.4) (2019-06-04)
 [Full Changelog](https://github.com/dynamic/silverstripe-elemental-gallery/compare/2.0.3...2.0.4)
 
