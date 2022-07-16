@@ -1,5 +1,13 @@
 # Change Log
 
+## [2.1.0](https://github.com/dynamic/silverstripe-elemental-gallery/tree/2.1.0) (2022-07-15)
+
+## What's Changed
+* REFACTOR PHP8 and PHPUNIT 9 compatibility by @jsirish in https://github.com/dynamic/silverstripe-elemental-gallery/pull/24
+
+
+**Full Changelog**: https://github.com/dynamic/silverstripe-elemental-gallery/compare/2.0.5...2.1.0
+
 ## [2.0.5](https://github.com/dynamic/silverstripe-elemental-gallery/tree/2.0.5) (2019-09-03)
 [Full Changelog](https://github.com/dynamic/silverstripe-elemental-gallery/compare/2.0.4...2.0.5)
 
