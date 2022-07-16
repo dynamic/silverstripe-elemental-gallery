@@ -1,6 +1,6 @@
 # Silverstripe Elemental Gallery
 
-
+[![CI](https://github.com/dynamic/silverstripe-elemental-gallery/actions/workflows/ci.yml/badge.svg)](https://github.com/dynamic/silverstripe-elemental-gallery/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/dynamic/silverstripe-elemental-gallery/branch/master/graph/badge.svg)](https://codecov.io/gh/dynamic/silverstripe-elemental-gallery)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-gallery/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-gallery)
