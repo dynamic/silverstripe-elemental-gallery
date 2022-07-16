@@ -5,7 +5,7 @@
         {
             "name": "Dynamic",
             "email": "dev@dynamicagency.com",
-            "homepage": "http://www.dynamicagency.com"
+            "homepage": "https://www.dynamicagency.com"
         }
     ],
     "keywords": [
@@ -14,7 +14,7 @@
     "type": "silverstripe-vendormodule",
     "license": "BSD-3-Clause",
     "require": {
-        "dnadesign/silverstripe-elemental": "^4.0",
+        "dnadesign/silverstripe-elemental": "^4.8",
         "dynamic/silverstripe-elemental-baseobject": "^2.0"
     },
     "require-dev": {
