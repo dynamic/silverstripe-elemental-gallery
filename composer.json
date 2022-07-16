@@ -39,13 +39,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.x-dev"
-        },
-        "expose": [
-            "thirdparty"
-        ]
-    }
+    "prefer-stable": true
 }
