@@ -1,6 +1,17 @@
 {
     "name": "dynamic/silverstripe-elemental-gallery",
     "description": "A block to display a collection of images",
+    "license": "BSD-3-Clause",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "elemental",
+        "content",
+        "blocks",
+        "gallery",
+        "image",
+        "photo"
+    ],
     "authors": [
         {
             "name": "Dynamic",
@@ -8,21 +19,23 @@
             "homepage": "https://www.dynamicagency.com"
         }
     ],
-    "keywords": [
-        "silverstripe", "elemental", "content", "blocks", "gallery", "image", "photo"
-    ],
-    "type": "silverstripe-vendormodule",
-    "license": "BSD-3-Clause",
     "require": {
         "dnadesign/silverstripe-elemental": "^4.8",
-        "dynamic/silverstripe-elemental-baseobject": "^2.0"
+        "dynamic/silverstripe-elemental-baseobject": "^3.0"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^2",
-        "squizlabs/php_codesniffer": "^3.0"
+        "silverstripe/recipe-testing": "^2"
     },
     "suggest": {
         "colymba/gridfield-bulk-editing-tools": "Bulk upload images to a gallery."
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Dynamic\\Elements\\Gallery\\": "src/",
+            "Dynamic\\Elements\\Gallery\\Tests\\": "tests/"
+        }
     },
     "config": {
         "allow-plugins": {
@@ -32,18 +45,7 @@
         },
         "process-timeout": 600
     },
-    "autoload": {
-        "psr-4": {
-            "Dynamic\\Elements\\Gallery\\": "src/",
-            "Dynamic\\Elements\\Gallery\\Tests\\": "tests/"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "extra": {
-        "branch-alias": {
-            "dev-master": "2.x-dev"
-        },
         "expose": [
             "thirdparty"
         ]
