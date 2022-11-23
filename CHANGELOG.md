@@ -1,5 +1,11 @@
 # Change Log
 
+## [3.0.0-alpha1](https://github.com/dynamic/silverstripe-elemental-gallery/tree/3.0.0-alpha1) (2022-11-23)
+* REFACTOR require base object 3 by @jsirish in https://github.com/dynamic/silverstripe-elemental-gallery/pull/25
+
+
+**Full Changelog**: https://github.com/dynamic/silverstripe-elemental-gallery/compare/2.1.0...3.0.0-alpha1
+
 ## [2.1.0](https://github.com/dynamic/silverstripe-elemental-gallery/tree/2.1.0) (2022-07-15)
 
 ## What's Changed
