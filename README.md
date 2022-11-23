@@ -1,6 +1,6 @@
 # Silverstripe Elemental Gallery
 
-
+[![CI](https://github.com/dynamic/silverstripe-elemental-gallery/actions/workflows/ci.yml/badge.svg)](https://github.com/dynamic/silverstripe-elemental-gallery/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/dynamic/silverstripe-elemental-gallery/branch/master/graph/badge.svg)](https://codecov.io/gh/dynamic/silverstripe-elemental-gallery)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-gallery/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-gallery)
@@ -11,7 +11,7 @@
 ## Requirements
 
 * dnadesign/silverstripe-elemental: ^4.8
-* dynamic/silverstripe-elemental-baseobject: ^2.0
+* dynamic/silverstripe-elemental-baseobject: ^3.0
 
 #### Optional
 
@@ -25,6 +25,21 @@
 
 See [License](license.md)
 
+## Upgrading from version 2
+
+Elemental Gallery drops `sheadawson/silverstripe-linkable` usage in favor of `gorriecoe/silverstripe-linkfield`. To avoid data loss, install the `dynamic/silverstripe-link-migrator` module as follows:
+
+```markdown
+composer require dynamic/silverstripe-link-migrator
+```
+
+Then, run the task "Linkable to SilverStripe Link Migration" via `/dev/tasks`, or cli via:
+```markdown
+vendor/bin/sake dev/tasks/LinkableMigrationTask
+```
+
+This will populate all of the new Link fields with data from the old class.
+
 ## Example usage
 
 Photo Gallery Element block allows you to display a collection of images. Click on the image thumbnail to open a larger version in Lightbox.
@@ -32,21 +47,21 @@ Photo Gallery Element block allows you to display a collection of images. Click 
 ## Screen Shots
 
 #### Front End sample of a Gallery Element
-![Front End sample of a Gallery Element](./readme-images/gallery-block-sample.jpg)
+![Front End sample of a Gallery Element](./docs/en/_images/gallery-block-sample.jpg)
 
 #### Front End sample of a Gallery Element - Lightbox
-![Front End sample of a Gallery Element](./readme-images/gallery-block-sample-lightbox.jpg)
+![Front End sample of a Gallery Element](./docs/en/_images/gallery-block-sample-lightbox.jpg)
 
 #### CMS - Gallery Main Tab
-![CMS - Gallery Main Tab](./readme-images/gallery-block-cms.jpg)
+![CMS - Gallery Main Tab](./docs/en/_images/gallery-block-cms.jpg)
 
 #### CMS - Gallery - Add/Edit Gallery Image
-![CMS - Gallery Main Tab](./readme-images/gallery-block-cms-add-image.jpg)
+![CMS - Gallery Main Tab](./docs/en/_images/gallery-block-cms-add-image.jpg)
 
 
 ## Getting more elements
 
-See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#getting-more-elements)
+See [Elemental modules by Dynamic](https://github.com/orgs/dynamic/repositories?q=elemental&type=all&language=&sort=)
 
 ## Configuration
 
