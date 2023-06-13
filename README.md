@@ -15,7 +15,7 @@
 
 #### Optional
 
-* colymba/gridfield-bulk-editing-tools ^3.0
+* colymba/gridfield-bulk-editing-tools ^4.0
 
 ## Installation
 
