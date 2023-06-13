@@ -85,7 +85,7 @@ class GalleryImage extends BaseElementObject
         ));
         $image = $fields->dataFieldByName('Image')
             ->setFolderName('Uploads/Elements/PhotoGallery/');
-        $fields->insertBefore('Content',$image);
+        $fields->insertBefore('Content', $image);
 
         // so if anything depends on PageLink it doesn't flake out
         $fields->replaceField('PageLink', new LiteralField('PageLink', ''));
