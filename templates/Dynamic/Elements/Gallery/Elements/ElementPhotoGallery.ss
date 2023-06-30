@@ -14,5 +14,5 @@
 
 <% require css('dynamic/silverstripe-elemental-gallery: thirdparty/lightbox/lightbox.css') %>
 
-<% require javascript('silverstripe/admin: thirdparty/jquery/jquery.js') %>
+<% require javascript('silverstripe/admin: thirdparty/jquery-query/jquery.query.js') %>
 <% require javascript('dynamic/silverstripe-elemental-gallery: thirdparty/lightbox/lightbox.min.js') %>
