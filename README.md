@@ -11,7 +11,7 @@
 ## Requirements
 
 * dnadesign/silverstripe-elemental: ^5
-* dynamic/silverstripe-elemental-baseobject: ^4
+* dynamic/silverstripe-elemental-baseobject: ^5
 
 #### Optional
 
