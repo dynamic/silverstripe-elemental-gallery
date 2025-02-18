@@ -44,13 +44,5 @@
             "silverstripe/vendor-plugin": true
         },
         "process-timeout": 600
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "5.x-dev"
-        },
-        "expose": [
-            "thirdparty"
-        ]
     }
 }
