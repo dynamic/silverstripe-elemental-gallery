@@ -60,6 +60,20 @@ class ElementPhotoGallery extends BaseElement
     ];
 
     /**
+     * @var array
+     */
+    private static $cascade_deletes = [
+        'Images',
+    ];
+
+    /**
+     * @var array
+     */
+    private static $cascade_duplicates = [
+        'Images',
+    ];
+
+    /**
      * @var bool
      */
     private static $inline_editable = false;
