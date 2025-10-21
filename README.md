@@ -1,7 +1,6 @@
 # Silverstripe Elemental Gallery
 
 [![CI](https://github.com/dynamic/silverstripe-elemental-gallery/actions/workflows/ci.yml/badge.svg)](https://github.com/dynamic/silverstripe-elemental-gallery/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/dynamic/silverstripe-elemental-gallery/branch/master/graph/badge.svg)](https://codecov.io/gh/dynamic/silverstripe-elemental-gallery)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-gallery/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-gallery)
 [![Total Downloads](https://poser.pugx.org/dynamic/silverstripe-elemental-gallery/downloads)](https://packagist.org/packages/dynamic/silverstripe-elemental-gallery)
@@ -10,12 +9,15 @@
 
 ## Requirements
 
-* dnadesign/silverstripe-elemental: ^5
-* dynamic/silverstripe-elemental-baseobject: ^5
+- PHP: ^8.3
+- silverstripe/recipe-plugin: ^2
+- silverstripe/vendor-plugin: ^2
+- dnadesign/silverstripe-elemental: ^6
+- dynamic/silverstripe-elemental-baseobject: ^6
 
-#### Optional
+### Suggested Modules
 
-* colymba/gridfield-bulk-editing-tools ^4.0
+- colymba/gridfield-bulk-editing-tools (^3): Provides bulk upload support
 
 ## Installation
 
@@ -25,13 +27,20 @@
 
 See [License](license.md)
 
-## Upgrading from version 4
 
-This module drops `gorriecoe/silverstripe-linkfield` usage in favor of `silverstripe/linkfield`.
 
 ## Example usage
 
 Photo Gallery Element block allows you to display a collection of images. Click on the image thumbnail to open a larger version in Lightbox.
+
+## Features
+
+- Display a collection of images in a responsive gallery layout
+- Bulk image upload support via Colymba's GridField Bulk Manager
+- Automatic cascade deletion (images are removed when gallery is deleted)
+- Automatic cascade duplication (images are copied when gallery is duplicated)
+- Optional HTML content field for gallery description
+- Lightbox integration for image viewing
 
 ## Screen Shots
 
@@ -48,19 +57,29 @@ Photo Gallery Element block allows you to display a collection of images. Click 
 ![CMS - Gallery Main Tab](./docs/en/_images/gallery-block-cms-add-image.jpg)
 
 
-## Getting more elements
-
-See [Elemental modules by Dynamic](https://github.com/orgs/dynamic/repositories?q=elemental&type=all&language=&sort=)
-
 ## Configuration
 
+### Bulk Image Upload
+
+This module supports bulk image uploads through the CMS. To enable this feature, ensure you have installed the recommended package:
+
+```bash
+composer require colymba/gridfield-bulk-editing-tools
+```
+
+Once installed, you'll see a bulk upload button in the gallery images grid field.
+
+### Content Field
+
+The gallery element includes an optional HTML content field that can be used to add a description or introduction text above the gallery.
+
+## Getting more elements
+
+See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#getting-more-elements)
+
+## Additional Configuration
+
 See [SilverStripe Elemental Configuration](https://github.com/dnadesign/silverstripe-elemental#configuration)
-
-## Translations
-
-The translations for this project are managed via [Transifex](https://www.transifex.com/dynamicagency/silverstripe-elemental-gallery/)
-and are updated automatically during the release process. To contribute, please head to the link above and get
-translating!
 
 ## Maintainers
 
