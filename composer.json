@@ -20,11 +20,15 @@
         }
     ],
     "require": {
+        "php": "^8.3",
         "dnadesign/silverstripe-elemental": "^6",
         "dynamic/silverstripe-elemental-baseobject": "^6"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^4"
+        "cambis/silverstan": "^2.1",
+        "phpstan/extension-installer": "^1.4",
+        "silverstripe/recipe-testing": "^4",
+        "squizlabs/php_codesniffer": "^3.7"
     },
     "suggest": {
         "colymba/gridfield-bulk-editing-tools": "Bulk upload images to a gallery."
