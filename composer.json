@@ -20,11 +20,11 @@
         }
     ],
     "require": {
-        "dnadesign/silverstripe-elemental": "^5",
-        "dynamic/silverstripe-elemental-baseobject": "^5"
+        "dnadesign/silverstripe-elemental": "^6",
+        "dynamic/silverstripe-elemental-baseobject": "^6"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^3"
+        "silverstripe/recipe-testing": "^4"
     },
     "suggest": {
         "colymba/gridfield-bulk-editing-tools": "Bulk upload images to a gallery."
