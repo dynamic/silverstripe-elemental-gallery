@@ -4,8 +4,6 @@ namespace Dynamic\Elements\Gallery\Model;
 
 use Dynamic\BaseObject\Model\BaseElementObject;
 use Dynamic\Elements\Gallery\Elements\ElementPhotoGallery;
-use SilverStripe\Assets\Image;
-use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\LiteralField;
 
 /**

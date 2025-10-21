@@ -1,4 +1,1 @@
 <?php
-
-define('SILVERSTRIPE_ELEMENTAL-GALLERY_PATH', __DIR__);
-define('SILVERSTRIPE_ELEMENTAL-GALLERY_DIR', basename(__DIR__));

@@ -6,9 +6,7 @@ use Colymba\BulkUpload\BulkUploader;
 use DNADesign\Elemental\Models\BaseElement;
 use Dynamic\Elements\Gallery\Model\GalleryImage;
 use SilverStripe\Forms\FieldList;
-use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldAddExistingAutocompleter;
-use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
 use SilverStripe\Forms\GridField\GridFieldDeleteAction;
 use SilverStripe\ORM\FieldType\DBField;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
@@ -56,6 +54,20 @@ class ElementPhotoGallery extends BaseElement
      * @var array
      */
     private static $owns = [
+        'Images',
+    ];
+
+    /**
+     * @var array
+     */
+    private static $cascade_deletes = [
+        'Images',
+    ];
+
+    /**
+     * @var array
+     */
+    private static $cascade_duplicates = [
         'Images',
     ];
 
