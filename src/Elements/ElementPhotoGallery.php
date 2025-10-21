@@ -13,6 +13,8 @@ use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
 /**
  * Class ElementPhotoGallery.
+ *
+ * @method \SilverStripe\ORM\HasManyList|\Dynamic\Elements\Gallery\Model\GalleryImage[] Images()
  */
 class ElementPhotoGallery extends BaseElement
 {
@@ -106,7 +108,7 @@ class ElementPhotoGallery extends BaseElement
                 $config = $field->getConfig();
                 $config
                     ->addComponents([
-                        new GridFieldOrderableRows('SortOrder')
+                        GridFieldOrderableRows::create('SortOrder')
                     ])
                     ->removeComponentsByType([
                         GridFieldAddExistingAutocompleter::class,
@@ -131,12 +133,13 @@ class ElementPhotoGallery extends BaseElement
      */
     public function getSummary()
     {
-        if ($this->Images()->count() == 1) {
+        $images = $this->Images();
+        if ($images->count() == 1) {
             $label = ' image';
         } else {
             $label = ' images';
         }
-        return DBField::create_field('HTMLText', $this->Images()->count() . ' ' . $label)->Summary(20);
+        return DBField::create_field('HTMLText', $images->count() . ' ' . $label)->Summary(20);
     }
 
     /**
