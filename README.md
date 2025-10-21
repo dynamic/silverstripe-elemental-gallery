@@ -78,7 +78,7 @@ The gallery element includes an optional HTML content field that can be used to 
 
 See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#getting-more-elements)
 
-## Configuration
+## Additional Configuration
 
 See [SilverStripe Elemental Configuration](https://github.com/dnadesign/silverstripe-elemental#configuration)
 
