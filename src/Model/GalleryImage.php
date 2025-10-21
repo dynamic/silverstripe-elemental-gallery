@@ -86,7 +86,7 @@ class GalleryImage extends BaseElementObject
         $fields->insertBefore('Content', $image);
 
         // so if anything depends on PageLink it doesn't flake out
-        $fields->replaceField('PageLink', new LiteralField('PageLink', ''));
+        $fields->replaceField('PageLink', LiteralField::create('PageLink', ''));
 
         return $fields;
     }
