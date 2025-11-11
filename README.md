@@ -1,5 +1,7 @@
 # Silverstripe Elemental Gallery
 
+[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
+
 [![CI](https://github.com/dynamic/silverstripe-elemental-gallery/actions/workflows/ci.yml/badge.svg)](https://github.com/dynamic/silverstripe-elemental-gallery/actions/workflows/ci.yml)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-gallery/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-gallery)
