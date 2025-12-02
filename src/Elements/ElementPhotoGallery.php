@@ -24,12 +24,12 @@ class ElementPhotoGallery extends BaseElement
     private static $icon = 'font-icon-p-gallery';
 
     /**
-     * @return string
+     * @var string
      */
     private static $singular_name = 'Photo Gallery';
 
     /**
-     * @return string
+     * @var string
      */
     private static $plural_name = 'Photo Gallery Blocks';
 
