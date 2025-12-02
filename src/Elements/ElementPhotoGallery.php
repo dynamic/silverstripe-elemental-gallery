@@ -26,12 +26,12 @@ class ElementPhotoGallery extends BaseElement
     /**
      * @return string
      */
-    private static $singular_name = 'Photo Gallery Element';
+    private static $singular_name = 'Photo Gallery';
 
     /**
      * @return string
      */
-    private static $plural_name = 'Photo Gallery Elements';
+    private static $plural_name = 'Photo Gallery Blocks';
 
     /**
      * @var string
@@ -149,13 +149,5 @@ class ElementPhotoGallery extends BaseElement
         $blockSchema = parent::provideBlockSchema();
         $blockSchema['content'] = $this->getSummary();
         return $blockSchema;
-    }
-
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-        return _t(__CLASS__.'.BlockType', 'Photo Gallery');
     }
 }
