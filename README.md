@@ -1,7 +1,8 @@
 # Silverstripe Elemental Gallery
 
-[![CI](https://github.com/dynamic/silverstripe-elemental-gallery/actions/workflows/ci.yml/badge.svg)](https://github.com/dynamic/silverstripe-elemental-gallery/actions/workflows/ci.yml)
-[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
+A block to display a collection of images
+
+[![CI](https://github.com/dynamic/silverstripe-elemental-gallery/actions/workflows/ci.yml/badge.svg)](https://github.com/dynamic/silverstripe-elemental-gallery/actions/workflows/ci.yml) [![Sponsors](https://img.shields.io/badge/GitHub-Sponsors-ff69b4?logo=github)](https://github.com/sponsors/dynamic)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-gallery/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-gallery)
 [![Total Downloads](https://poser.pugx.org/dynamic/silverstripe-elemental-gallery/downloads)](https://packagist.org/packages/dynamic/silverstripe-elemental-gallery)
@@ -11,8 +12,6 @@
 ## Requirements
 
 - PHP: ^8.3
-- silverstripe/recipe-plugin: ^2
-- silverstripe/vendor-plugin: ^2
 - dnadesign/silverstripe-elemental: ^6
 - dynamic/silverstripe-elemental-baseobject: ^6
 
@@ -22,13 +21,9 @@
 
 ## Installation
 
-`composer require dynamic/silverstripe-elemental-gallery`
-
-## License
-
-See [License](license.md)
-
-
+```
+composer require dynamic/silverstripe-elemental-gallery
+```
 
 ## Example usage
 
@@ -57,7 +52,6 @@ Photo Gallery Element block allows you to display a collection of images. Click 
 #### CMS - Gallery - Add/Edit Gallery Image
 ![CMS - Gallery Main Tab](./docs/en/_images/gallery-block-cms-add-image.jpg)
 
-
 ## Configuration
 
 ### Bulk Image Upload
@@ -76,7 +70,7 @@ The gallery element includes an optional HTML content field that can be used to 
 
 ## Getting more elements
 
-See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#getting-more-elements)
+See [Elemental modules by Dynamic](https://github.com/orgs/dynamic/repositories?q=elemental&type=all&language=&sort=)
 
 ## Additional Configuration
 
@@ -84,21 +78,24 @@ See [SilverStripe Elemental Configuration](https://github.com/dnadesign/silverst
 
 ## Maintainers
 
- *  [Dynamic](http://www.dynamicagency.com) (<dev@dynamicagency.com>)
+ *  [Dynamic](https://www.dynamicagency.com) (<dev@dynamicagency.com>)
 
 ## Bugtracker
-Bugs are tracked in the issues section of this repository. Before submitting an issue please read over
-existing issues to ensure yours is unique.
+
+Bugs are tracked in the issues section of this repository. Before submitting an issue please read over existing issues to ensure yours is unique.
 
 If the issue does look like a new bug:
 
  - Create a new issue
- - Describe the steps required to reproduce your issue, and the expected outcome. Unit tests, screenshots
- and screencasts can help here.
- - Describe your environment as detailed as possible: SilverStripe version, Browser, PHP version,
- Operating System, any installed SilverStripe modules.
+ - Describe the steps required to reproduce your issue, and the expected outcome. Unit tests, screenshots and screencasts can help here.
+ - Describe your environment as detailed as possible: SilverStripe version, Browser, PHP version, Operating System, any installed SilverStripe modules.
 
 Please report security issues to the module maintainers directly. Please don't file security issues in the bugtracker.
 
 ## Development and contribution
+
 If you would like to make contributions to the module please ensure you raise a pull request and discuss with the module maintainers.
+
+## License
+
+See [License](LICENSE.md)
